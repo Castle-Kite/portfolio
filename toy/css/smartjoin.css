@@ -1,0 +1,29 @@
+	#label {
+		font-size: 14pt;
+		line-height: 200%;
+		color: gray;
+	}
+	
+	#cimg {
+		width: 80px;
+		height: 80px;
+		border: 1px solid gray;
+	}
+	#mans {
+		width: 100px; 
+		height: 100px; 
+		border: 1px solid gray; 
+		padding: 8px;
+	}
+	
+	#preView {
+		display : none;
+	}
+	
+	#avt {
+		display : none;
+	}
+	#avt2 {
+		display : none;
+	}
+	

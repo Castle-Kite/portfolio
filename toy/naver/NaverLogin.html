@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Naver login</title>
+</head>
+<body>
+	<div style="width: 650px; margin: 0px auto;">
+		<header style="margin:0px auto; width: 200px; padding-top: 59px;">
+			<img src="../img/naver.png" style="width: 100%">
+		</header>
+			<div style="width: 460px; height: 1018px; margin: 0px auto; margin-top: 20px;">
+				<h1 style="font-size: 14pt; margin: 8px 0px; margin-top: 19px; padding: 10px 14px 0px;">아이디</h1>
+					<div style="position: relative; width: 89%; height: 45px; padding: 0px 110px 0px 14px;">
+							<input type="text" id="id" name="id" class="int" maxlength="20" style="width: 100%; height: 45px; padding: 0px 25px 0px 25px; border: 1px solid lightgray">
+							<span style="font-size: 15px; position: relative; left: 360px; bottom: 38px; color: #8e8e8e;">@naver.com</span> 
+					</div>
+				<h1 style="font-size: 14pt; margin: 8px 0px; margin-top: 19px; padding: 10px 14px 0px;">비밀번호</h1>
+					<div style="position: relative; width: 89%; height: 45px; padding: 0px 110px 0px 14px">
+							<input type="password" id="pw" name="pw" class="int" maxlength="20" style="width: 100%; height: 45px; padding: 0px 25px 0px 25px; border: 1px solid lightgray">
+							<img src="../img/pass1.png" style="position: absolute; left: 435px; bottom: 5px; width: 25px; height:30px;">
+					</div>
+				<h1 style="font-size: 14pt; margin: 8px 0px; margin-top: 19px; padding: 10px 14px 0px;">비밀번호 재확인</h1>
+					<div style="position: relative; width: 89%; height: 45px; padding: 0px 110px 0px 14px;">
+							<input type="password" id="pw" name="pw" class="int" maxlength="20" style="width: 100%; height: 45px; padding: 0px 25px 0px 25px; border: 1px solid lightgray">
+							<img src="../img/pass2.png" style="position: absolute; left: 435px; bottom: 5px; width: 25px; height:30px;">
+					</div>
+				<h1 style="font-size: 14pt; margin: 8px 0px; margin-top: 19px; padding: 10px 14px 0px;">이 름</h1>
+					<div style="position: relative; width: 89%; height: 45px; padding: 0px 110px 0px 14px;">
+							<input type="text" id="name" name="name" class="int" maxlength="20" style="width: 100%; height: 45px; padding: 0px 25px 0px 25px; border: 1px solid lightgray">
+					</div>
+				<div style="width: 460px; height: 105px; padding: 10px 14px 0px; display: block; font-size: 12pt;">
+					<h1 style="font-size: 14pt; margin: 8px 0px; margin-top: 19px;">생년월일</h1>
+						<span style="width: 100%; height: 51px;">
+								<input type="text" id="yy" placeholder="년(4자)" class="int" maxlength="4" style="width: 25%; height: 29px; padding: 11px 14px; font-size: 12pt; border: 1px solid lightgray;">
+						</span>
+						<span style="width: 151px; height: 55px;">
+								<select id="mm" class="sel" aria-label="월" style="width: 154px; height: 55px; padding: 11px 14px; font-size: 12pt; border: 1px solid lightgray;">
+									<option selected>월</option>
+									<option value="01">1</option>
+									<option value="02">2</option>
+									<option value="03">3</option>
+									<option value="04">4</option>
+									<option value="05">5</option>
+									<option value="06">6</option>
+									<option value="07">7</option>
+									<option value="08">8</option>
+									<option value="09">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+						</span>
+						<span style="width: 460px; height: 51px;">
+								<input type="text" id="dd" placeholder="일" class="int" maxlength="2" style="width: 25%; height: 29px; padding: 11px 14px; font-size: 12pt; border: 1px solid lightgray;">
+						</span>
+				</div>
+				<h1 style="font-size: 14pt; margin: 8px 0px; margin-top: 19px; padding: 10px 14px 0px;">성 별</h1>
+					<div style="position: relative; width: 100%; height: 45px; padding: 0px 14px;">
+							<select id="gender" name="gender" class="sel" aria-laber="성별" style="width: 100%; height: 49px; padding: 10px 7px 10px 14px; font-size: 12pt; border: 1px solid lightgray;">
+								<option selected>성별</option>
+								<option value="M">남자</option>
+								<option value="W">여자</option>
+								<option value="U">선택 안함</option>
+							</select>
+					</div>
+				<h1 style="font-size: 14pt; margin: 8px 0px; margin-top: 19px; padding: 10px 14px 0px;">본인 확인 이메일(선택)</h1>
+					<div style="position: relative; width: 89%; height: 45px; padding: 0px 110px 10px 14px;">
+							<input type="password" id="pw" name="pw" class="int" maxlength="20" style="width: 100%; height: 45px; padding: 0px 25px 0px 25px; border: 1px solid lightgray;">
+					</div>
+					<div style="padding: 14px; width: 460px;">	
+						<h1 style="font-size: 14pt; margin: 8px 0px; margin-top: 13px;">휴대전화</h1>
+							<div style="position: relative; width: 100%; height: 49px; margin-top: 13px;">
+									<select id="nationNo" name="natonNo" class="sel" aria-label="전화번호를 입력" style="width: 100%; height: 49px; padding: 10px 7px 10px 14px; font-size: 12pt; border: 1px solid lightgray;">
+										<option value="82" selected>대한민국 +82</option>
+									</select>
+							</div>	
+							<div style="position: relative; width: 100%; height: 49px; margin-top: 13px;">
+									<input type="tel" id="phoneNo" name="phonNo" placeholder="전화번호 입력" class="int" maxlength="16" style="width: 70%; height: 45px; font-size: 12pt; padding: 0px 0px 0px 14px; border: 1px solid lightgray;">
+									<input type="button" onclick="alert" value="인증번호 받기" style="background-color: #03c75a; color: #fff; width: 115px; height: 51px; font-size: 12pt; border: 0px solid gray; ">
+							</div>	
+							<div style="position: relative; width: 89%; height: 49px; margin-top: 20px;">
+									<input type="tel" id="authNo" name="authNo" placeholder="인증번호 입력하세요" class="int" maxlength="4" style="width: 105%; height: 47px; padding: 0px 14px; font-size: 12pt; border: 1px solid lightgray;">
+							</div>
+						<div style="margin: 30px 0px 9px;">
+							<input type="button" onclick="alert" value="가입하기" style="background-color: #03c75a; color: #fff; width: 100%; padding: 15px 0px 15px; font-size: 18pt; border: 0px solid lightgray;">
+						</div>
+						<div style="margin: 0px auto; font-size: 8pt; text-align: center;">
+								<div style="padding: 15px 0px 15px 0px;">
+									<p>이용약관 ㅣ<strong>개인정보처리방침</strong> ㅣ 책임의 한계와  법적고지 ㅣ 회원정보 ㅣ 고객센터</p><br>
+									<div>
+									<img src="../img/naver.png" style="width: 63px; height:12px;">
+									 <p style="margin-top: -18px; text-align: center; display: inline;">
+									 <span style="color: #333333;">Copyright</span> 
+									 <span style="color: #666666;">NAVER Corp.</span> 
+									 <span style="color: #333333;">All Right Reserved.</span>
+									 <p>
+							
+									 </div>
+					</div>	
+						</div>
+				</div>
+			</div>	
+	</div>
+</body>
+</html>

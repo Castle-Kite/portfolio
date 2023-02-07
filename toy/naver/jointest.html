@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>smart join</title>
+<link rel="stylesheet" type="text/css" href="../css/w3.css">
+<link rel="stylesheet" type="text/css" href="../css/chopa.css">
+<link rel="stylesheet" type="text/css" href="../css/smartjoin.css">
+<script type="text/javascript" src="../js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+	<div class="w3-content mxw650 w3-center">
+		<h1 class="w3-pink w3-round-medium w3-card-4 w3-padding">Smart join</h1>
+		<form method="POST" action="/homework/result.html" id="frm" name="frm">
+			<div class="w3-col w3-border w3-card-4 w3-round-medium">
+				<div class="w3-padding mgt20">
+					<label class="w3-col m3 w3-right-align pdr10" id="label">이 름 :</label>
+					<input type="text" name="name" id="name" placeholder="이름을 입력하세요!"
+					class="w3-col m7 w3-padding w3-text-gray w3-input w3-border">
+				</div>
+				<div class="w3-padding w3-col mgt10">
+					<label class="w3-col m3 w3-right-align pdr10" id="label">I D :</label>
+					<input type="text" name="id" id="id" placeholder="아이디을 입력하세요!"
+					class="w3-col m5 w3-padding w3-text-gray w3-input w3-border">
+					<div class="w3-col m2 w3-center-align mgl10 w3-button w3-blue w3-left w3-rast pdr10 pdl10" 
+							style="width: 92px; font-weight: 10px;" id="idck">check</div>
+				</div>
+					<p style="text-align: center;" id="idMsg"></p>
+				<div class="w3-padding w3-col mgt10">
+					<label class="w3-col m3 w3-right-align pdr10" id="label">P W :</label>
+					<input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하세요!"
+					class="w3-col m7 w3-padding w3-text-gray w3-input w3-border">
+				</div>
+				<div class="w3-padding w3-col mgt10">
+					<label class="w3-col m3 w3-right-align pdr10" id="label">rePW :</label>
+					<input type="password" name="rpw" id="rpw" placeholder="비밀번호를 입력하세요!"
+					class="w3-col m7 w3-padding w3-text-gray w3-input w3-border">
+				</div>
+					<p class="w3-center" id="pwmsg"></p>
+				<div class="w3-padding w3-col mgt10">
+					<label class="w3-col m3 w3-right-align pdr10" id="label">mail :</label>
+					<input type="text" name="mail" id="mail" placeholder="이메일을 입력하세요!"
+					class="w3-col m7 w3-padding w3-text-gray w3-input w3-border">
+				</div>
+				<div class="w3-padding w3-col mgt10">
+					<label class="w3-col m3 w3-right-align pdr10" id="label">phone :</label>
+					<input type="tel" name="hp" id="hp" placeholder="전화번호를 입력하세요!"
+					class="w3-col m7 w3-padding w3-text-gray w3-input w3-border">
+				</div>
+				<!-- 추가된 부분 -->
+				<div class="w3-padding w3-col mgt10">
+					<label for="file" class="w3-col m3 w3-right-align pdr10" id="label">프로필 사진 : </label>
+					<div class="w3-col m7" id="filefr">
+					<input type="file" name="file" id="file" class="w3-col w3-border w3-padding file w3-input" placeholder="이미지 파일 선택!">
+					</div>
+				</div>
+				<div class="w3-padding w3-col mgt10" id="preView">
+					<label class="w3-col m3 w3-right-align w3-text-grey pdr10" id="label">미리보기 : </label>
+					<div class="w3-col m8 w3-center pdl10" id="imgfr">
+					</div>
+				</div>
+				<div class="w3-padding w3-col mgb10">
+					<label class="w3-col m3 w3-right-align pdr10" id="label">gender :</label>
+						<div class="w3-col m3 w3-center-align mgt10">
+							<input class="gen" type="radio" id="gen" name="gen" value="M" style="float: center;">
+								<label for="gen">남자</label>
+						</div>
+						<div class="w3-col m3 w3-center-align mgt10">
+							<input class="gen" type="radio" id="gen" name="gen" value="F" style="float: center;">
+								<label for="gen">여자</label>
+						</div>
+				</div>
+				<div class="w3-padding w3-col mgt10 mgb10" id="avt">
+					<label class="w3-col m3 w3-right-align pdr10" id="label">아 바 타 :</label>
+						<div id="man" class="w3-rest w3-padding w3-margin-bottom">
+							<div>							
+								<label class="w3-col s3 w3-margin-right">
+								<div id="mans">
+									<img src="../img/img_avatar1.png" id="cimg"><br>
+								</div>
+								<input class="w3-radio" type="radio" name="avatar" id="M" value="M1">							
+								</label>							
+							</div>
+							<div>
+								<label class="w3-col s3 w3-margin-right">
+								<div id="mans">
+									<img src="../img/img_avatar2.png" id="cimg"><br>
+								</div>
+								<input class="w3-radio" type="radio" name="avatar" id="M" value="M2">							
+								</label>
+							</div>
+							<div>
+								<label class="w3-col s3 w3-margin-right">
+								<div id="mans">
+									<img src="../img/img_avatar3.png" id="cimg"><br>
+								</div>
+								<input class="w3-radio" type="radio" name="avatar" id="M" value="M3">							
+								</label>
+							</div>
+						</div>
+						<div id="woman" class="w3-rest w3-padding">
+							<div>
+								<label class="w3-col s3 w3-margin-right">
+								<div id="mans">
+									<img src="../img/img_avatar4.png" id="cimg"><br>
+								</div>
+								<input class="w3-radio" type="radio" name="avatar" id="W" value="W1">							
+								</label>
+							</div>
+							<div>
+								<label class="w3-col s3 w3-margin-right">
+								<div id="mans">
+									<img src="../img/img_avatar5.png" id="cimg"><br>
+								</div>
+								<input class="w3-radio" type="radio" name="avatar" id="W" value="W2">							
+								</label>
+							</div>
+							<div>
+								<label class="w3-col s3 w3-margin-right">
+								<div id="mans">
+									<img src="../img/img_avatar6.png" id="cimg"><br>
+								</div>
+								<input class="w3-radio" type="radio" name="avatar" id="W" value="W3">							
+								</label>
+							</div>
+						</div> 
+				</div>
+			</div>
+		</form>
+			<div class="w3-col w3-center w3-margin-top w3-round-medium">
+					<div class="w3-col m4 w3-green w3-button w3-card-4">home</div>
+					<div class="w3-col m4 w3-orange w3-button w3-card-4" id="jbtn">join</div>
+					<div class="w3-col m4 w3-blue w3-button w3-card-4">login</div>
+			</div>
+	</div>
+<script type="text/javascript" src="../js/smartjoin.js"></script>
+</body>
+</html>
