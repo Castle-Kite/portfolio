@@ -1,0 +1,242 @@
+body {
+    width: 80%;
+}
+html {
+    max-width: 100%;
+}
+body, html {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black !important;
+    margin: 0px 10%;
+}
+#brand {
+    display: block;
+    width: 100%;
+    height: 3%;
+    padding: 5px 7px;
+    position: fixed;
+    left: 10px;
+    background-color: white;
+    margin-top: 0;
+    line-height: 240%;
+    z-index: 1;
+}
+#brand > a, #brand > #update {
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+#brand > a, #topBtn > button {
+    font-size: 15pt !important;
+    font-weight: bold;
+}
+#brand > a:hover {
+    color: #2c72f5;
+}
+#brand > #update {
+    font-size: 12pt !important;
+    float: right;
+    position: relative;
+    right: 30px;
+}
+#contact > div {
+    display: inline-block;
+}
+#contact > div:first-child {
+    height: auto;
+    float: left;
+    position: relative;
+    bottom: 25px;
+}
+#contact > div:nth-child(2) > span {
+    width: 100%;
+    margin-bottom: 10px;
+    float: right;
+}
+#contact img {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 6px;
+}
+#education {
+    padding-bottom: 290px;
+    margin-bottom: 1px;
+}
+#education > div:nth-child(2) > div:nth-child(2) > span,
+#education > div:nth-child(2) > div:nth-child(2) > span ~ div,
+#etc > div:first-child ~ div > div:nth-child(2) > span:first-child {
+    color: #4b4f56;
+}
+#etc {
+    padding-bottom: 130px;
+    margin-bottom: 1px;
+}
+#etc > div:first-child ~ div > div:nth-child(2) > span:nth-child(3) {
+    color: #757b85;
+}
+#introduce > div:nth-child(2), #introduce ~ div > div:nth-child(2) {
+    font-size: 15pt !important;
+}
+#resume {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+#resume > div:first-child {
+    font-size: 30pt !important;
+}
+#resume > div:first-child ~ div > div:first-child > h2 {
+    font-size: 21pt !important;
+    color: #2c72f5;
+}
+#resume > div:nth-child(3) {
+    font-size: 21pt;
+    padding: 10px auto;
+    margin: 15px auto;
+}
+#skill {
+    margin-bottom: 80px;
+}
+#skill > div:first-child ~ div > div:first-child,
+#education > div:nth-child(2) > div > span,
+#etc > div:first-child ~ div > div:nth-child(odd) > span {
+    color: #7180a0;
+}
+#topBtn > button {
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: italic;
+    text-decoration: none;
+    background-color: white;
+    color: darkgray;
+    border: 0;
+    cursor: pointer;
+}
+#topBtn > button:hover {
+    color: #74757a;
+}
+#toy {
+    margin-bottom: 625px;
+}
+
+/* 범용 클래스 */
+.b-1-s-b {
+    border: 1px solid black;
+}
+.d-inline-block {
+    display: inline-block !important;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.float-clear {
+    clear: both;
+}
+.fs-13 {
+    font-size: 13pt !important;
+}
+.fs-14 {
+    font-size: 14pt !important;
+}
+.fs-15 {
+    font-size: 15pt !important;
+}
+.fs-16 {
+    font-size: 16pt !important;
+}
+.fw-bold {
+    font-weight: bold;
+}
+.mb-7 {
+    margin-bottom: 7px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-21 {
+    margin-bottom: 21px;
+}
+.mb-22 {
+    margin-bottom: 22px;
+}
+.mb-24 {
+    margin-bottom: 24px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-80 {
+    margin-bottom: 80px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-11 {
+    margin-left: 11px;
+}
+.mt-1 {
+    margin-top: 1px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.width-120px {
+    width: 120px;
+}
+.width-140px {
+    width: 140px;
+}
+.width-255px {
+    width: 255px;
+}
+.width-15 {
+    width: 15% !important;
+}
+.width-33 {
+    width: 33% !important;
+}
+.width-48 {
+    width: 48% !important;
+}
+.width-50 {
+    width: 50% !important;
+}
+.width-60 {
+    width: 60% !important;
+}
+.width-70 {
+    width: 70% !important;
+}
+.width-100 {
+    width: 100% !important;
+}
+
+
